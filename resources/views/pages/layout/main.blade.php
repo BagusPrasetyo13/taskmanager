@@ -16,7 +16,9 @@
 
     {{-- MAIN --}}
     <main>
-        @yield('content')
+        <div class="container-content">
+            @yield('content')
+        </div>
     </main>
     {{-- !MAIN --}}
 </body>

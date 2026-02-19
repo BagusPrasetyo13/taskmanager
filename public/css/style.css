@@ -158,6 +158,30 @@
     width: 100%;
 }
 
+.task-lists h2 {
+    margin: 20px 0 0 0;
+}
+
+.task-info {
+    width: 75%;
+}
+
+.task-info .task-title {
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.task-info .task-desc span {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.task-info .task-desc p {
+    font-size: 18px;
+    font-weight: 300;
+    text-align: justify;
+}
+
 .task-lists .card {
     margin: 15px 0 15px 0;
     padding: 10px 50px;
@@ -172,12 +196,83 @@
     justify-content: center;
     align-items: center;
     gap: 30px;
-    position: relative;
-    z-index: 9999;
+    width: 20%;
+}
+
+.task-btn button {
+    padding: 5px;
+}
+
+.task-due-date {
+    display: flex;
+    gap: 20px;
+    padding: 20px 0 20px 0;
+}
+
+.task-due-date p {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.task-due-date span {
+    font-weight: 500;
+    font-size: 18px;
 }
 
 .divider {
     width: 1px;
     background-color: black;
     align-self: stretch;
+}
+
+/* NEW TASK */
+
+.row-header {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    width: 100%;
+}
+
+.row-header a {
+    justify-self: start;
+    background-color: #0d6efd;
+    padding: 10px 20px;
+}
+
+.row-header h2 {
+    justify-self: center;
+}
+
+.new-task-content {
+    width: 100%;
+    margin: 15px 0;
+}
+
+.new-task-content form {
+    display: flex;
+    flex-direction: column;
+}
+
+.new-task-content .input-group {
+    margin: 20px 5px;
+}
+
+.new-task-content .input-group input {
+    font-size: 16px;
+}
+
+.new-task-content textarea {
+    width: 100%;
+    min-height: 120px;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    resize: vertical;
+}
+
+.new-task-content form button {
+    width: 100px;
+    padding: 10px 20px;
+    align-self: center;
 }
